@@ -20,7 +20,7 @@ const Navbar = () => {
           <div className={styles.logo}>
             <Image src='/img/logo.png' alt='MisterBurgerLogo' width='160' height='100' style={{ objectFit: 'cover' }} />
           </div>
-          <li className={styles.listItem}>Blog</li>
+          <li className={styles.listItem}>Reviews</li>
           <li className={styles.listItem}>Contact</li>
         </ul>
       </div>
