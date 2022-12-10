@@ -1,9 +1,16 @@
 @import './colors.scss';
+@import './mixins/Device.scss';
 
 .container {
   height: calc(100vh - 120px);
   background-color: $primary-color;
   overflow: hidden;
+  position: relative;
+
+  @include devices(mobile) {
+    height: 50vh;
+  }
+
 
   .arrowContainer {
     position: absolute;

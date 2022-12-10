@@ -1,4 +1,5 @@
 @import './colors.scss';
+@import './mixins/Device.scss';
 
 .container {
   width: 22%;
@@ -24,5 +25,20 @@
   .desc {
     text-align: center;
     color: #777;
+  }
+}
+
+@include devices(mobile) {
+  .container {
+    width: 100%;
+
+    .title {
+      font-size: 30px;
+    }
+
+    .price,
+    .desc {
+      font-size: 24px;
+    }
   }
 }

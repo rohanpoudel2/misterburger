@@ -26,7 +26,7 @@ const product = () => {
     <div className={styles.container}>
       <div className={styles.left}>
         <div className={styles.imgContainer}>
-          <Image src={burger.img} alt='burgerImage' fill />
+          <Image src={burger.img} alt='burgerImage' fill objectFit='contain' />
         </div>
       </div>
       <div className={styles.right}>

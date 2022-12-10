@@ -1,9 +1,10 @@
 @import './colors.scss';
+@import './mixins/Device.scss';
 
 .container {
   padding: 50px;
   display: flex;
-  height: 100vh;
+  height: calc(100vh - 40vh);
 
   .left {
     flex: 2;
@@ -64,6 +65,48 @@
         border-radius: 50px;
       }
 
+    }
+  }
+}
+
+@include devices(mobile) {
+  .container {
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+
+    .table {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      tr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      th {
+        display: none;
+      }
+
+      .imageContainer {
+        width: 60vw;
+        height: 30vh;
+      }
+
+      .total {
+        font-size: 24px !important;
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }

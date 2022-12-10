@@ -1,4 +1,5 @@
 @import './colors.scss';
+@import './mixins/Device.scss';
 
 .container {
   height: calc(100vh - 120px);
@@ -86,6 +87,62 @@
         border-radius: 50px;
         font-size: 24px;
         cursor: pointer;
+      }
+    }
+  }
+}
+
+@include devices(mobile) {
+  .container {
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+
+    .imgContainer {
+      width: 50vw !important;
+      height: 20vh !important;
+      margin-bottom: -20px;
+    }
+
+    .right {
+      padding: 0px;
+
+      .sizes {
+        padding-right: 0px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .size {
+          width: 100%;
+          margin-bottom: 50px;
+
+          &:nth-child(1) {
+            font-size: 15px;
+          }
+
+          &:nth-child(2) {
+            font-size: 18px;
+          }
+
+          &:nth-child(3) {
+            font-size: 20px;
+            margin-bottom: 0px;
+          }
+
+          span {
+            right: 160px;
+            top: -20px;
+          }
+        }
+      }
+
+      .add {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
       }
     }
   }
