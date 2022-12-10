@@ -4,6 +4,7 @@
   height: 40vh;
   background-color: $primary-color;
   padding: 0px 50px;
+  width: 100%;
 
   .item {
     display: flex;
@@ -12,16 +13,11 @@
 
     .card {
       margin-top: 20px;
-      padding: 5px;
-      border-radius: 5px;
-      background-color: $highlight-color;
 
       .motto {
         font-weight: bold;
         font-size: 55px;
       }
-
-      border: 1px solid black;
 
     }
   }

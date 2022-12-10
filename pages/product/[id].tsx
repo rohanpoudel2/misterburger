@@ -26,7 +26,7 @@ const product = () => {
     <div className={styles.container}>
       <div className={styles.left}>
         <div className={styles.imgContainer}>
-          <Image src={burger.img} alt='burgerImage' layout='fill' />
+          <Image src={burger.img} alt='burgerImage' fill />
         </div>
       </div>
       <div className={styles.right}>
@@ -35,17 +35,17 @@ const product = () => {
         <p className={styles.desc}>{burger.desc}</p>
         <h3 className={styles.choose}>Choose the size of your 🍔</h3>
         <div className={styles.sizes}>
-          <div className={styles.size} onClick={() => setSize(0)}>
-            🍔
-            <span className={styles.number}>Sano Burger</span>
+          <div className={styles.size}>
+            <Image src='/img/burgersize.png' alt='Burger Size' width={60} height={50} />
+            <span>Small</span>
           </div>
-          <div className={styles.size} onClick={() => setSize(1)}>
-            🍔
-            <span className={styles.number}>Thikka Ko Burger</span>
+          <div className={styles.size}>
+            <Image src='/img/burgersize.png' alt='Burger Size' width={90} height={80} />
+            <span>Medium</span>
           </div>
-          <div className={styles.size} onClick={() => setSize(2)}>
-            🍔
-            <span className={styles.number}>Massive Burger</span>
+          <div className={styles.size}>
+            <Image src='/img/burgersize.png' alt='Burger Size' width={100} height={90} />
+            <span>Large</span>
           </div>
         </div>
         <div className={styles.add}>

@@ -1,0 +1,69 @@
+@import './colors.scss';
+
+.container {
+  padding: 50px;
+  display: flex;
+  height: 100vh;
+
+  .left {
+    flex: 2;
+
+    .imageContainer {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .table {
+      width: 100%;
+      border-spacing: 20px;
+      text-align: center;
+
+      .name {
+        font-weight: 500;
+        color: $primary-color;
+        font-size: 18px;
+      }
+
+      .total {
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .right {
+    flex: 1;
+
+    .wrapper {
+      width: 90%;
+      max-height: 300px;
+      background-color: $highlight-color;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+      border-radius: 50px;
+
+      .title {
+        margin-top: -10px;
+      }
+
+      .totalTextTitle {
+        margin-right: 10px;
+      }
+
+      .button {
+        height: 30px;
+        background-color: $primary-color;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 20px;
+        border: 1px solid black;
+        border-radius: 50px;
+      }
+
+    }
+  }
+}
